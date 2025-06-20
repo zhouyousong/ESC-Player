@@ -6,4 +6,5 @@ ESP-Player 的原型是我在2023年底开始制作的桌面组合音箱
 
 这个设计有几个自己给自己挖的坑
 1.
+
 ![图片](https://github.com/user-attachments/assets/75ac60f1-0cad-414d-8e2c-fc86f191100f)
