@@ -1,4 +1,5 @@
 # ESC-Player
+ESC-Player是我今年业余时间对过去十来年音频和NAS工作结合后的一个小小总结
 
 ![图片](https://github.com/user-attachments/assets/01148239-b4be-413e-9042-6ba21159ce8f)
 ![图片](https://github.com/user-attachments/assets/af7947e3-c54a-4126-b1af-e0c6931406b6)
@@ -71,30 +72,38 @@ ESP-Player 的原型是我在2023年底开始制作的桌面组合音箱
 
 Picoreplayer自带的律动频谱和UV表非常多，大家可以有很大的选择空间
 
-（图）
+![图片](https://github.com/user-attachments/assets/dffd5ed8-f579-4c8e-985b-cd7c5801a5b3)
+
 
 **NAS**：
 NAS基本上都是在原本只做文件服务共享的基础上加上了影音服务，同时把我专辑NAS里使用率最高的功能也移植了过来
+![图片](https://github.com/user-attachments/assets/68107e28-f943-48d2-85d7-acf70b1425fa)
+
 
 1. Filebrowser，可以用网页浏览器管理文件，免去临时使用时不需要映射网络硬盘
 
-2. Alist + Rclone + 自定义Python（开源）：网盘内容后台下载，只需要在手机网盘客户端（如百度网盘）上将想下载的文件放到指定文件夹，即可触发自动拉取到本地硬盘，实现后台下载（10W）
+2. Alist + Rclone + 自定义Python（开源）：网盘内容后台下载，只需要在手机网盘客户端（如百度网盘）上将想下载的文件放到指定文件夹，即可触发自动拉取到本地硬盘，实现后台下载（功率10W）
 
 3. 编译适配ifuse+simple-mtpfs加上自定义的python（开源）实现iphone/DJI osmo/Gopro相册一键下载到NAS指定文件夹（可增量下载）
-4. Jellyfin适配，网页或者手机客户端可实现看片自由
-5. Navidrome适配，可在手机上自由自在听NAS里的本地音乐
+![图片](https://github.com/user-attachments/assets/680c4fee-c9e5-4261-9066-066c03463779)
+
+5. Jellyfin适配，网页或者手机客户端可实现看片自由
+![图片](https://github.com/user-attachments/assets/628795ef-3d84-4919-8772-33326495b787)
+
+7. Navidrome适配，可在手机上自由自在听NAS里的本地音乐
+![图片](https://github.com/user-attachments/assets/d064c949-a416-40b4-9023-757f5092d8af)
 
 当时为了远程SSH support我的朋友做一些问题修复，我部署了frpc，可以在网页上一键打开或关闭远程访问，这必然也是一个安全隐患，欢迎大家审查代码，我只是FRPC的使用者
 
 **其他开发中的功能**
-
-
 
 公网访问：适配DDNS动态域名IP更新，带公网IP的家庭网络配合域名（一年30左右）可实现广域网访问，可在任何地点访问个人NAS服务
 
 NFC选歌：通过NFC刷卡的方式调出专辑，让选专辑实现实体化
 
 #
-以上就是ESC-Player的主要功能，欢迎大家Copy使用，我也会持续开发一些实用的功能，让他释放出更多的能力
+**以上就是ESC-Player的主要功能，所有的源码都是python+shell编写，未编译未加密运行，镜像放在SW文件夹里的链接到百度网盘**
+
+欢迎大家Copy使用，我也会持续开发一些实用的功能，让他释放出更多的能力
 
 欢迎关注我B站账号ZhouYousong，后续有陆续出视频说明。如遇到问题的可以加我wx：zhou-yousong。也欢迎有兴趣量产的朋友联系合作
